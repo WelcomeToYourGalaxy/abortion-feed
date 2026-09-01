@@ -1,1653 +1,3219 @@
 {
-  "_note": "Wires for the abortion feed. harvest_abortion.py reads this and writes wire_abortion.json. Each wire carries a 'standing': official, research, press, rights (abortion-rights advocacy) or antiabortion (anti-abortion advocacy). Both advocacy sides are carried deliberately and labelled on every row, so the reader always knows what they are reading. Standing is provenance, not endorsement. Edit this file to add, drop or rebalance a source. Locale coverage is expanded: several country editions per language, and each query split into slices so no single search hits Google News's ~100-result cap.",
-  "direct": [
-    {
-      "name": "World Health Organization",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.who.int/rss-feeds/news-english.xml"
-    },
-    {
-      "name": "UN News — Health",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml"
-    },
-    {
-      "name": "UN News — Human Rights",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://news.un.org/feed/subscribe/en/news/topic/human-rights/feed/rss.xml"
-    },
-    {
-      "name": "SCOTUSblog",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.scotusblog.com/feed/"
-    },
-    {
-      "name": "JURIST — legal news",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.jurist.org/news/feed/"
-    },
-    {
-      "name": "Courthouse News",
-      "lang": "en",
-      "standing": "official",
-      "url": "https://www.courthousenews.com/feed/"
-    },
-    {
-      "name": "The Lancet",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.thelancet.com/rssfeed/lancet_current.xml"
-    },
-    {
-      "name": "BMJ — latest",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.bmj.com/rss/recent.xml"
-    },
-    {
-      "name": "KFF Health News",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://kffhealthnews.org/feed/"
-    },
-    {
-      "name": "Guttmacher Institute",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.guttmacher.org/rss.xml"
-    },
-    {
-      "name": "Human Rights Watch",
-      "lang": "en",
-      "standing": "research",
-      "url": "https://www.hrw.org/rss/news"
-    },
-    {
-      "name": "The 19th",
-      "lang": "en",
-      "standing": "press",
-      "url": "https://19thnews.org/feed/"
-    },
-    {
-      "name": "The Guardian — World",
-      "lang": "en",
-      "standing": "press",
-      "url": "https://www.theguardian.com/world/rss"
-    },
-    {
-      "name": "Center for Reproductive Rights",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://reproductiverights.org/feed/"
-    },
-    {
-      "name": "IPPF",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://www.ippf.org/rss.xml"
-    },
-    {
-      "name": "Rewire News Group",
-      "lang": "en",
-      "standing": "rights",
-      "url": "https://rewirenewsgroup.com/feed/"
-    },
-    {
-      "name": "National Right to Life News",
-      "lang": "en",
-      "standing": "antiabortion",
-      "url": "https://www.nationalrighttolifenews.org/feed/"
-    },
-    {
-      "name": "Live Action News",
-      "lang": "en",
-      "standing": "antiabortion",
-      "url": "https://www.liveaction.org/news/feed/"
-    },
-    {
-      "name": "Catholic News Agency",
-      "lang": "en",
-      "standing": "antiabortion",
-      "url": "https://www.catholicnewsagency.com/rss/news.xml"
-    }
-  ],
-  "gnews": [
-    {
-      "label": "English (US) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion law OR abortion ruling OR \"abortion access\""
-    },
-    {
-      "label": "English (US) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"reproductive rights\" OR \"abortion ban\""
-    },
-    {
-      "label": "English (GB) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion law OR abortion ruling OR \"abortion access\""
-    },
-    {
-      "label": "English (GB) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "\"reproductive rights\" OR \"abortion ban\""
-    },
-    {
-      "label": "English (IN) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion law OR abortion ruling OR \"abortion access\""
-    },
-    {
-      "label": "English (IN) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "\"reproductive rights\" OR \"abortion ban\""
-    },
-    {
-      "label": "English (AU) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion law OR abortion ruling OR \"abortion access\""
-    },
-    {
-      "label": "English (AU) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "\"reproductive rights\" OR \"abortion ban\""
-    },
-    {
-      "label": "English (CA) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "abortion law OR abortion ruling OR \"abortion access\""
-    },
-    {
-      "label": "English (CA) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "\"reproductive rights\" OR \"abortion ban\""
-    },
-    {
-      "label": "English (UK) (US) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion law OR \"abortion clinic\" OR decriminalisation abortion"
-    },
-    {
-      "label": "English (UK) (US) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "\"buffer zones\" abortion"
-    },
-    {
-      "label": "English (UK) (GB) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion law OR \"abortion clinic\" OR decriminalisation abortion"
-    },
-    {
-      "label": "English (UK) (GB) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "\"buffer zones\" abortion"
-    },
-    {
-      "label": "English (UK) (IN) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion law OR \"abortion clinic\" OR decriminalisation abortion"
-    },
-    {
-      "label": "English (UK) (IN) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "\"buffer zones\" abortion"
-    },
-    {
-      "label": "English (UK) (AU) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion law OR \"abortion clinic\" OR decriminalisation abortion"
-    },
-    {
-      "label": "English (UK) (AU) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "\"buffer zones\" abortion"
-    },
-    {
-      "label": "English (UK) (CA) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "abortion law OR \"abortion clinic\" OR decriminalisation abortion"
-    },
-    {
-      "label": "English (UK) (CA) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "\"buffer zones\" abortion"
-    },
-    {
-      "label": "English (India) (US) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion law India OR MTP Act OR \"medical termination of pregnancy\""
-    },
-    {
-      "label": "English (India) (US) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion court"
-    },
-    {
-      "label": "English (India) (GB) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion law India OR MTP Act OR \"medical termination of pregnancy\""
-    },
-    {
-      "label": "English (India) (GB) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion court"
-    },
-    {
-      "label": "English (India) (IN) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion law India OR MTP Act OR \"medical termination of pregnancy\""
-    },
-    {
-      "label": "English (India) (IN) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion court"
-    },
-    {
-      "label": "English (India) (AU) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion law India OR MTP Act OR \"medical termination of pregnancy\""
-    },
-    {
-      "label": "English (India) (AU) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion court"
-    },
-    {
-      "label": "English (India) (CA) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "abortion law India OR MTP Act OR \"medical termination of pregnancy\""
-    },
-    {
-      "label": "English (India) (CA) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "abortion court"
-    },
-    {
-      "label": "English (Aus) (US) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion law OR abortion access OR \"reproductive health\" legislation"
-    },
-    {
-      "label": "English (Aus) (US) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion clinic"
-    },
-    {
-      "label": "English (Aus) (GB) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion law OR abortion access OR \"reproductive health\" legislation"
-    },
-    {
-      "label": "English (Aus) (GB) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion clinic"
-    },
-    {
-      "label": "English (Aus) (IN) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion law OR abortion access OR \"reproductive health\" legislation"
-    },
-    {
-      "label": "English (Aus) (IN) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion clinic"
-    },
-    {
-      "label": "English (Aus) (AU) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion law OR abortion access OR \"reproductive health\" legislation"
-    },
-    {
-      "label": "English (Aus) (AU) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion clinic"
-    },
-    {
-      "label": "English (Aus) (CA) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "abortion law OR abortion access OR \"reproductive health\" legislation"
-    },
-    {
-      "label": "English (Aus) (CA) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-CA",
-      "gl": "CA",
-      "ceid": "CA:en",
-      "query": "abortion clinic"
-    },
-    {
-      "label": "English (Ireland) (IE)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IE",
-      "gl": "IE",
-      "ceid": "IE:en",
-      "query": "abortion services review OR \"termination of pregnancy\" law OR abortion legislation"
-    },
-    {
-      "label": "English (Ireland) (US)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion services review OR \"termination of pregnancy\" law OR abortion legislation"
-    },
-    {
-      "label": "English (Ireland) (GB)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion services review OR \"termination of pregnancy\" law OR abortion legislation"
-    },
-    {
-      "label": "English (Ireland) (IN)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion services review OR \"termination of pregnancy\" law OR abortion legislation"
-    },
-    {
-      "label": "English (Ireland) (AU)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion services review OR \"termination of pregnancy\" law OR abortion legislation"
-    },
-    {
-      "label": "English (Kenya) (KE) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-KE",
-      "gl": "KE",
-      "ceid": "KE:en",
-      "query": "abortion law Kenya OR \"unsafe abortion\" OR reproductive health bill"
-    },
-    {
-      "label": "English (Kenya) (KE) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-KE",
-      "gl": "KE",
-      "ceid": "KE:en",
-      "query": "abortion court ruling"
-    },
-    {
-      "label": "English (Kenya) (US) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion law Kenya OR \"unsafe abortion\" OR reproductive health bill"
-    },
-    {
-      "label": "English (Kenya) (US) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion court ruling"
-    },
-    {
-      "label": "English (Kenya) (GB) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion law Kenya OR \"unsafe abortion\" OR reproductive health bill"
-    },
-    {
-      "label": "English (Kenya) (GB) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion court ruling"
-    },
-    {
-      "label": "English (Kenya) (IN) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion law Kenya OR \"unsafe abortion\" OR reproductive health bill"
-    },
-    {
-      "label": "English (Kenya) (IN) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion court ruling"
-    },
-    {
-      "label": "English (Kenya) (AU) 1",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion law Kenya OR \"unsafe abortion\" OR reproductive health bill"
-    },
-    {
-      "label": "English (Kenya) (AU) 2",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion court ruling"
-    },
-    {
-      "label": "English (Nigeria) (NG)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-NG",
-      "gl": "NG",
-      "ceid": "NG:en",
-      "query": "abortion law OR \"unsafe abortion\" deaths OR reproductive health policy"
-    },
-    {
-      "label": "English (Nigeria) (US)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion law OR \"unsafe abortion\" deaths OR reproductive health policy"
-    },
-    {
-      "label": "English (Nigeria) (GB)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion law OR \"unsafe abortion\" deaths OR reproductive health policy"
-    },
-    {
-      "label": "English (Nigeria) (IN)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion law OR \"unsafe abortion\" deaths OR reproductive health policy"
-    },
-    {
-      "label": "English (Nigeria) (AU)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion law OR \"unsafe abortion\" deaths OR reproductive health policy"
-    },
-    {
-      "label": "English (S. Africa) (ZA)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-ZA",
-      "gl": "ZA",
-      "ceid": "ZA:en",
-      "query": "abortion law OR termination of pregnancy act OR abortion access clinic"
-    },
-    {
-      "label": "English (S. Africa) (US)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion law OR termination of pregnancy act OR abortion access clinic"
-    },
-    {
-      "label": "English (S. Africa) (GB)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-GB",
-      "gl": "GB",
-      "ceid": "GB:en",
-      "query": "abortion law OR termination of pregnancy act OR abortion access clinic"
-    },
-    {
-      "label": "English (S. Africa) (IN)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-IN",
-      "gl": "IN",
-      "ceid": "IN:en",
-      "query": "abortion law OR termination of pregnancy act OR abortion access clinic"
-    },
-    {
-      "label": "English (S. Africa) (AU)",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-AU",
-      "gl": "AU",
-      "ceid": "AU:en",
-      "query": "abortion law OR termination of pregnancy act OR abortion access clinic"
-    },
-    {
-      "label": "Español (ES) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es",
-      "gl": "ES",
-      "ceid": "ES:es",
-      "query": "ley del aborto OR \"interrupción voluntaria del embarazo\" OR sentencia aborto"
-    },
-    {
-      "label": "Español (ES) 2",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es",
-      "gl": "ES",
-      "ceid": "ES:es",
-      "query": "acceso al aborto"
-    },
-    {
-      "label": "Español (MX) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "MX",
-      "ceid": "MX:es-419",
-      "query": "ley del aborto OR \"interrupción voluntaria del embarazo\" OR sentencia aborto"
-    },
-    {
-      "label": "Español (MX) 2",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "MX",
-      "ceid": "MX:es-419",
-      "query": "acceso al aborto"
-    },
-    {
-      "label": "Español (AR) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "AR",
-      "ceid": "AR:es-419",
-      "query": "ley del aborto OR \"interrupción voluntaria del embarazo\" OR sentencia aborto"
-    },
-    {
-      "label": "Español (AR) 2",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "AR",
-      "ceid": "AR:es-419",
-      "query": "acceso al aborto"
-    },
-    {
-      "label": "Español (CO) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CO",
-      "ceid": "CO:es-419",
-      "query": "ley del aborto OR \"interrupción voluntaria del embarazo\" OR sentencia aborto"
-    },
-    {
-      "label": "Español (CO) 2",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CO",
-      "ceid": "CO:es-419",
-      "query": "acceso al aborto"
-    },
-    {
-      "label": "Español (CL) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CL",
-      "ceid": "CL:es-419",
-      "query": "ley del aborto OR \"interrupción voluntaria del embarazo\" OR sentencia aborto"
-    },
-    {
-      "label": "Español (CL) 2",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CL",
-      "ceid": "CL:es-419",
-      "query": "acceso al aborto"
-    },
-    {
-      "label": "Español (MX) (ES) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es",
-      "gl": "ES",
-      "ceid": "ES:es",
-      "query": "despenalización del aborto OR \"aborto legal\" OR Suprema Corte aborto"
-    },
-    {
-      "label": "Español (MX) (MX) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "MX",
-      "ceid": "MX:es-419",
-      "query": "despenalización del aborto OR \"aborto legal\" OR Suprema Corte aborto"
-    },
-    {
-      "label": "Español (MX) (AR) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "AR",
-      "ceid": "AR:es-419",
-      "query": "despenalización del aborto OR \"aborto legal\" OR Suprema Corte aborto"
-    },
-    {
-      "label": "Español (MX) (CO) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CO",
-      "ceid": "CO:es-419",
-      "query": "despenalización del aborto OR \"aborto legal\" OR Suprema Corte aborto"
-    },
-    {
-      "label": "Español (MX) (CL) 1",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CL",
-      "ceid": "CL:es-419",
-      "query": "despenalización del aborto OR \"aborto legal\" OR Suprema Corte aborto"
-    },
-    {
-      "label": "Español (AR) (ES)",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es",
-      "gl": "ES",
-      "ceid": "ES:es",
-      "query": "aborto legal OR \"interrupción del embarazo\" ley OR acceso al aborto provincias"
-    },
-    {
-      "label": "Español (AR) (MX)",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "MX",
-      "ceid": "MX:es-419",
-      "query": "aborto legal OR \"interrupción del embarazo\" ley OR acceso al aborto provincias"
-    },
-    {
-      "label": "Español (AR) (AR)",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "AR",
-      "ceid": "AR:es-419",
-      "query": "aborto legal OR \"interrupción del embarazo\" ley OR acceso al aborto provincias"
-    },
-    {
-      "label": "Español (AR) (CO)",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CO",
-      "ceid": "CO:es-419",
-      "query": "aborto legal OR \"interrupción del embarazo\" ley OR acceso al aborto provincias"
-    },
-    {
-      "label": "Español (AR) (CL)",
-      "lang": "es",
-      "standing": "press",
-      "hl": "es-419",
-      "gl": "CL",
-      "ceid": "CL:es-419",
-      "query": "aborto legal OR \"interrupción del embarazo\" ley OR acceso al aborto provincias"
-    },
-    {
-      "label": "Português (BR) 1",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "BR",
-      "ceid": "BR:pt-419",
-      "query": "aborto legal OR \"interrupção da gravidez\" OR STF aborto"
-    },
-    {
-      "label": "Português (BR) 2",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "BR",
-      "ceid": "BR:pt-419",
-      "query": "descriminalização do aborto"
-    },
-    {
-      "label": "Português (PT) 1",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "PT",
-      "ceid": "PT:pt-150",
-      "query": "aborto legal OR \"interrupção da gravidez\" OR STF aborto"
-    },
-    {
-      "label": "Português (PT) 2",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "PT",
-      "ceid": "PT:pt-150",
-      "query": "descriminalização do aborto"
-    },
-    {
-      "label": "Português (AO) 1",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "AO",
-      "ceid": "AO:pt-150",
-      "query": "aborto legal OR \"interrupção da gravidez\" OR STF aborto"
-    },
-    {
-      "label": "Português (AO) 2",
-      "lang": "pt",
-      "standing": "press",
-      "hl": "pt-BR",
-      "gl": "AO",
-      "ceid": "AO:pt-150",
-      "query": "descriminalização do aborto"
-    },
-    {
-      "label": "Français (FR) 1",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "FR",
-      "ceid": "FR:fr",
-      "query": "loi sur l'avortement OR IVG OR \"interruption volontaire de grossesse\""
-    },
-    {
-      "label": "Français (FR) 2",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "FR",
-      "ceid": "FR:fr",
-      "query": "accès à l'avortement"
-    },
-    {
-      "label": "Français (BE) 1",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "BE",
-      "ceid": "BE:fr",
-      "query": "loi sur l'avortement OR IVG OR \"interruption volontaire de grossesse\""
-    },
-    {
-      "label": "Français (BE) 2",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "BE",
-      "ceid": "BE:fr",
-      "query": "accès à l'avortement"
-    },
-    {
-      "label": "Français (CA) 1",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "CA",
-      "ceid": "CA:fr",
-      "query": "loi sur l'avortement OR IVG OR \"interruption volontaire de grossesse\""
-    },
-    {
-      "label": "Français (CA) 2",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "CA",
-      "ceid": "CA:fr",
-      "query": "accès à l'avortement"
-    },
-    {
-      "label": "Français (SN) 1",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "SN",
-      "ceid": "SN:fr",
-      "query": "loi sur l'avortement OR IVG OR \"interruption volontaire de grossesse\""
-    },
-    {
-      "label": "Français (SN) 2",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "SN",
-      "ceid": "SN:fr",
-      "query": "accès à l'avortement"
-    },
-    {
-      "label": "Français (CD) 1",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "CD",
-      "ceid": "CD:fr",
-      "query": "loi sur l'avortement OR IVG OR \"interruption volontaire de grossesse\""
-    },
-    {
-      "label": "Français (CD) 2",
-      "lang": "fr",
-      "standing": "press",
-      "hl": "fr",
-      "gl": "CD",
-      "ceid": "CD:fr",
-      "query": "accès à l'avortement"
-    },
-    {
-      "label": "Deutsch (DE) 1",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "DE",
-      "ceid": "DE:de",
-      "query": "Abtreibungsrecht OR Schwangerschaftsabbruch OR Paragraf 218"
-    },
-    {
-      "label": "Deutsch (DE) 2",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "DE",
-      "ceid": "DE:de",
-      "query": "Abtreibung Gesetz"
-    },
-    {
-      "label": "Deutsch (AT) 1",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "AT",
-      "ceid": "AT:de",
-      "query": "Abtreibungsrecht OR Schwangerschaftsabbruch OR Paragraf 218"
-    },
-    {
-      "label": "Deutsch (AT) 2",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "AT",
-      "ceid": "AT:de",
-      "query": "Abtreibung Gesetz"
-    },
-    {
-      "label": "Deutsch (CH) 1",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "CH",
-      "ceid": "CH:de",
-      "query": "Abtreibungsrecht OR Schwangerschaftsabbruch OR Paragraf 218"
-    },
-    {
-      "label": "Deutsch (CH) 2",
-      "lang": "de",
-      "standing": "press",
-      "hl": "de",
-      "gl": "CH",
-      "ceid": "CH:de",
-      "query": "Abtreibung Gesetz"
-    },
-    {
-      "label": "Italiano (IT) 1",
-      "lang": "it",
-      "standing": "press",
-      "hl": "it",
-      "gl": "IT",
-      "ceid": "IT:it",
-      "query": "legge 194 OR interruzione di gravidanza OR aborto accesso"
-    },
-    {
-      "label": "Italiano (IT) 2",
-      "lang": "it",
-      "standing": "press",
-      "hl": "it",
-      "gl": "IT",
-      "ceid": "IT:it",
-      "query": "obiezione di coscienza aborto"
-    },
-    {
-      "label": "Italiano (CH) 1",
-      "lang": "it",
-      "standing": "press",
-      "hl": "it",
-      "gl": "CH",
-      "ceid": "CH:it",
-      "query": "legge 194 OR interruzione di gravidanza OR aborto accesso"
-    },
-    {
-      "label": "Italiano (CH) 2",
-      "lang": "it",
-      "standing": "press",
-      "hl": "it",
-      "gl": "CH",
-      "ceid": "CH:it",
-      "query": "obiezione di coscienza aborto"
-    },
-    {
-      "label": "Polski 1",
-      "lang": "pl",
-      "standing": "press",
-      "hl": "pl",
-      "gl": "PL",
-      "ceid": "PL:pl",
-      "query": "prawo aborcyjne OR aborcja wyrok OR dostęp do aborcji"
-    },
-    {
-      "label": "Polski 2",
-      "lang": "pl",
-      "standing": "press",
-      "hl": "pl",
-      "gl": "PL",
-      "ceid": "PL:pl",
-      "query": "ustawa aborcyjna"
-    },
-    {
-      "label": "Nederlands (NL)",
-      "lang": "nl",
-      "standing": "press",
-      "hl": "nl",
-      "gl": "NL",
-      "ceid": "NL:nl",
-      "query": "abortuswet OR abortuszorg OR toegang tot abortus"
-    },
-    {
-      "label": "Nederlands (BE)",
-      "lang": "nl",
-      "standing": "press",
-      "hl": "nl",
-      "gl": "BE",
-      "ceid": "BE:nl",
-      "query": "abortuswet OR abortuszorg OR toegang tot abortus"
-    },
-    {
-      "label": "Svenska",
-      "lang": "sv",
-      "standing": "press",
-      "hl": "sv",
-      "gl": "SE",
-      "ceid": "SE:sv",
-      "query": "abortlag OR aborträtt OR tillgång till abort"
-    },
-    {
-      "label": "Ελληνικά",
-      "lang": "el",
-      "standing": "press",
-      "hl": "el",
-      "gl": "GR",
-      "ceid": "GR:el",
-      "query": "νόμος για την άμβλωση OR δικαίωμα στην άμβλωση OR πρόσβαση άμβλωση"
-    },
-    {
-      "label": "Русский (RU) 1",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "RU",
-      "ceid": "RU:ru",
-      "query": "закон об абортах OR запрет абортов OR доступ к аборту"
-    },
-    {
-      "label": "Русский (RU) 2",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "RU",
-      "ceid": "RU:ru",
-      "query": "прерывание беременности"
-    },
-    {
-      "label": "Русский (KZ) 1",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "KZ",
-      "ceid": "KZ:ru",
-      "query": "закон об абортах OR запрет абортов OR доступ к аборту"
-    },
-    {
-      "label": "Русский (KZ) 2",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "KZ",
-      "ceid": "KZ:ru",
-      "query": "прерывание беременности"
-    },
-    {
-      "label": "Русский (BY) 1",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "BY",
-      "ceid": "BY:ru",
-      "query": "закон об абортах OR запрет абортов OR доступ к аборту"
-    },
-    {
-      "label": "Русский (BY) 2",
-      "lang": "ru",
-      "standing": "press",
-      "hl": "ru",
-      "gl": "BY",
-      "ceid": "BY:ru",
-      "query": "прерывание беременности"
-    },
-    {
-      "label": "Українська",
-      "lang": "uk",
-      "standing": "press",
-      "hl": "uk",
-      "gl": "UA",
-      "ceid": "UA:uk",
-      "query": "закон про аборти OR доступ до аборту OR переривання вагітності"
-    },
-    {
-      "label": "Türkçe",
-      "lang": "tr",
-      "standing": "press",
-      "hl": "tr",
-      "gl": "TR",
-      "ceid": "TR:tr",
-      "query": "kürtaj yasası OR kürtaj hakkı OR gebeliğin sonlandırılması"
-    },
-    {
-      "label": "العربية (EG) 1",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "EG",
-      "ceid": "EG:ar",
-      "query": "قانون الإجهاض OR \"الإجهاض الآمن\" OR حق الإجهاض"
-    },
-    {
-      "label": "العربية (EG) 2",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "EG",
-      "ceid": "EG:ar",
-      "query": "إجهاض حكم قضائي"
-    },
-    {
-      "label": "العربية (SA) 1",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "SA",
-      "ceid": "SA:ar",
-      "query": "قانون الإجهاض OR \"الإجهاض الآمن\" OR حق الإجهاض"
-    },
-    {
-      "label": "العربية (SA) 2",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "SA",
-      "ceid": "SA:ar",
-      "query": "إجهاض حكم قضائي"
-    },
-    {
-      "label": "العربية (AE) 1",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "AE",
-      "ceid": "AE:ar",
-      "query": "قانون الإجهاض OR \"الإجهاض الآمن\" OR حق الإجهاض"
-    },
-    {
-      "label": "العربية (AE) 2",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "AE",
-      "ceid": "AE:ar",
-      "query": "إجهاض حكم قضائي"
-    },
-    {
-      "label": "العربية (MA) 1",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "MA",
-      "ceid": "MA:ar",
-      "query": "قانون الإجهاض OR \"الإجهاض الآمن\" OR حق الإجهاض"
-    },
-    {
-      "label": "العربية (MA) 2",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "MA",
-      "ceid": "MA:ar",
-      "query": "إجهاض حكم قضائي"
-    },
-    {
-      "label": "العربية (LB) 1",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "LB",
-      "ceid": "LB:ar",
-      "query": "قانون الإجهاض OR \"الإجهاض الآمن\" OR حق الإجهاض"
-    },
-    {
-      "label": "العربية (LB) 2",
-      "lang": "ar",
-      "standing": "press",
-      "hl": "ar",
-      "gl": "LB",
-      "ceid": "LB:ar",
-      "query": "إجهاض حكم قضائي"
-    },
-    {
-      "label": "فارسی",
-      "lang": "fa",
-      "standing": "press",
-      "hl": "fa",
-      "gl": "IR",
-      "ceid": "IR:fa",
-      "query": "قانون سقط جنین OR سقط جنین قانونی OR دسترسی به سقط جنین"
-    },
-    {
-      "label": "हिन्दी 1",
-      "lang": "hi",
-      "standing": "press",
-      "hl": "hi",
-      "gl": "IN",
-      "ceid": "IN:hi",
-      "query": "गर्भपात कानून OR गर्भपात अधिकार OR एमटीपी अधिनियम"
-    },
-    {
-      "label": "हिन्दी 2",
-      "lang": "hi",
-      "standing": "press",
-      "hl": "hi",
-      "gl": "IN",
-      "ceid": "IN:hi",
-      "query": "गर्भपात अदालत"
-    },
-    {
-      "label": "বাংলা (BD)",
-      "lang": "bn",
-      "standing": "press",
-      "hl": "bn",
-      "gl": "BD",
-      "ceid": "BD:bn",
-      "query": "গর্ভপাত আইন OR গর্ভপাত অধিকার OR নিরাপদ গর্ভপাত"
-    },
-    {
-      "label": "বাংলা (IN)",
-      "lang": "bn",
-      "standing": "press",
-      "hl": "bn",
-      "gl": "IN",
-      "ceid": "IN:bn",
-      "query": "গর্ভপাত আইন OR গর্ভপাত অধিকার OR নিরাপদ গর্ভপাত"
-    },
-    {
-      "label": "Bahasa Indonesia 1",
-      "lang": "id",
-      "standing": "press",
-      "hl": "id",
-      "gl": "ID",
-      "ceid": "ID:id",
-      "query": "undang-undang aborsi OR hak aborsi OR akses aborsi"
-    },
-    {
-      "label": "Bahasa Indonesia 2",
-      "lang": "id",
-      "standing": "press",
-      "hl": "id",
-      "gl": "ID",
-      "ceid": "ID:id",
-      "query": "aborsi aman"
-    },
-    {
-      "label": "Tiếng Việt",
-      "lang": "vi",
-      "standing": "press",
-      "hl": "vi",
-      "gl": "VN",
-      "ceid": "VN:vi",
-      "query": "luật phá thai OR quyền phá thai OR dịch vụ phá thai an toàn"
-    },
-    {
-      "label": "ไทย",
-      "lang": "th",
-      "standing": "press",
-      "hl": "th",
-      "gl": "TH",
-      "ceid": "TH:th",
-      "query": "กฎหมายทำแท้ง OR สิทธิทำแท้ง OR การยุติการตั้งครรภ์"
-    },
-    {
-      "label": "日本語 1",
-      "lang": "ja",
-      "standing": "press",
-      "hl": "ja",
-      "gl": "JP",
-      "ceid": "JP:ja",
-      "query": "人工妊娠中絶 法律 OR 中絶 権利 OR 経口中絶薬"
-    },
-    {
-      "label": "日本語 2",
-      "lang": "ja",
-      "standing": "press",
-      "hl": "ja",
-      "gl": "JP",
-      "ceid": "JP:ja",
-      "query": "母体保護法"
-    },
-    {
-      "label": "简体中文 (CN) 1",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "CN",
-      "ceid": "CN:zh-Hans",
-      "query": "堕胎法 OR 人工流产 政策 OR 生育权"
-    },
-    {
-      "label": "简体中文 (CN) 2",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "CN",
-      "ceid": "CN:zh-Hans",
-      "query": "堕胎权"
-    },
-    {
-      "label": "简体中文 (TW) 1",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-TW",
-      "gl": "TW",
-      "ceid": "TW:zh-Hant",
-      "query": "堕胎法 OR 人工流产 政策 OR 生育权"
-    },
-    {
-      "label": "简体中文 (TW) 2",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-TW",
-      "gl": "TW",
-      "ceid": "TW:zh-Hant",
-      "query": "堕胎权"
-    },
-    {
-      "label": "简体中文 (HK) 1",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-HK",
-      "gl": "HK",
-      "ceid": "HK:zh-Hant",
-      "query": "堕胎法 OR 人工流产 政策 OR 生育权"
-    },
-    {
-      "label": "简体中文 (HK) 2",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-HK",
-      "gl": "HK",
-      "ceid": "HK:zh-Hant",
-      "query": "堕胎权"
-    },
-    {
-      "label": "简体中文 (SG) 1",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "SG",
-      "ceid": "SG:zh-Hans",
-      "query": "堕胎法 OR 人工流产 政策 OR 生育权"
-    },
-    {
-      "label": "简体中文 (SG) 2",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "SG",
-      "ceid": "SG:zh-Hans",
-      "query": "堕胎权"
-    },
-    {
-      "label": "繁體中文 (CN)",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "CN",
-      "ceid": "CN:zh-Hans",
-      "query": "墮胎法 OR 人工流產 法規 OR 生育權"
-    },
-    {
-      "label": "繁體中文 (TW)",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-TW",
-      "gl": "TW",
-      "ceid": "TW:zh-Hant",
-      "query": "墮胎法 OR 人工流產 法規 OR 生育權"
-    },
-    {
-      "label": "繁體中文 (HK)",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-HK",
-      "gl": "HK",
-      "ceid": "HK:zh-Hant",
-      "query": "墮胎法 OR 人工流產 法規 OR 生育權"
-    },
-    {
-      "label": "繁體中文 (SG)",
-      "lang": "zh",
-      "standing": "press",
-      "hl": "zh-CN",
-      "gl": "SG",
-      "ceid": "SG:zh-Hans",
-      "query": "墮胎法 OR 人工流產 法規 OR 生育權"
-    },
-    {
-      "label": "한국어 1",
-      "lang": "ko",
-      "standing": "press",
-      "hl": "ko",
-      "gl": "KR",
-      "ceid": "KR:ko",
-      "query": "낙태법 OR 임신중지 권리 OR 낙태죄"
-    },
-    {
-      "label": "한국어 2",
-      "lang": "ko",
-      "standing": "press",
-      "hl": "ko",
-      "gl": "KR",
-      "ceid": "KR:ko",
-      "query": "임신중절 접근"
-    },
-    {
-      "label": "Kiswahili (KE)",
-      "lang": "sw",
-      "standing": "press",
-      "hl": "sw",
-      "gl": "KE",
-      "ceid": "KE:sw",
-      "query": "sheria ya utoaji mimba OR haki ya utoaji mimba OR utoaji mimba salama"
-    },
-    {
-      "label": "Kiswahili (TZ)",
-      "lang": "sw",
-      "standing": "press",
-      "hl": "sw",
-      "gl": "TZ",
-      "ceid": "TZ:sw",
-      "query": "sheria ya utoaji mimba OR haki ya utoaji mimba OR utoaji mimba salama"
-    }
-  ],
-  "events": [
-    {
-      "label": "Courts & rulings",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion ruling court OR supreme court abortion decision OR constitutional court abortion OR \"struck down\" abortion law"
-    },
-    {
-      "label": "Legislation & referendums",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion bill passed OR abortion referendum OR abortion law enacted OR parliament votes abortion OR ballot measure abortion"
-    },
-    {
-      "label": "Access & services",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion clinic closes OR abortion clinic opens OR travel for abortion OR \"abortion funds\" OR waiting period abortion"
-    },
-    {
-      "label": "Medication abortion",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "mifepristone OR misoprostol regulation OR \"medication abortion\" ruling OR telehealth abortion pills OR abortion pill approval"
-    },
-    {
-      "label": "Criminalisation",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "prosecuted for abortion OR jailed abortion OR criminal charges miscarriage OR abortion arrest OR \"abortion prosecution\""
-    },
-    {
-      "label": "Health outcomes & data",
-      "lang": "en",
-      "standing": "research",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "maternal mortality abortion study OR \"unsafe abortion\" deaths WHO OR abortion rates data OR study abortion access outcomes"
-    },
-    {
-      "label": "International bodies",
-      "lang": "en",
-      "standing": "official",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "WHO abortion guidance OR UN abortion rights OR CEDAW abortion OR European Court abortion OR \"Global Gag Rule\""
-    },
-    {
-      "label": "Movements & protest",
-      "lang": "en",
-      "standing": "press",
-      "hl": "en-US",
-      "gl": "US",
-      "ceid": "US:en",
-      "query": "abortion rights march OR anti-abortion campaign OR pro-life rally OR abortion protest OR clinic buffer zone protest"
-    }
-  ]
+ "_note": "Wires for the abortion feed. harvest_abortion.py reads this and writes wire_abortion.json. Each wire carries a 'standing': official, research, press, rights (abortion-rights advocacy) or antiabortion (anti-abortion advocacy). Both advocacy sides are carried deliberately and labelled on every row, so the reader always knows what they are reading. Standing is provenance, not endorsement. Edit this file to add, drop or rebalance a source. Locale coverage is expanded: several country editions per language, and each query split into slices so no single search hits Google News's ~100-result cap.",
+ "direct": [
+  {
+   "name": "World Health Organization",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.who.int/rss-feeds/news-english.xml"
+  },
+  {
+   "name": "UN News — Health",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml"
+  },
+  {
+   "name": "UN News — Human Rights",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://news.un.org/feed/subscribe/en/news/topic/human-rights/feed/rss.xml"
+  },
+  {
+   "name": "SCOTUSblog",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.scotusblog.com/feed/"
+  },
+  {
+   "name": "JURIST — legal news",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.jurist.org/news/feed/"
+  },
+  {
+   "name": "Courthouse News",
+   "lang": "en",
+   "standing": "official",
+   "url": "https://www.courthousenews.com/feed/"
+  },
+  {
+   "name": "The Lancet",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.thelancet.com/rssfeed/lancet_current.xml"
+  },
+  {
+   "name": "BMJ — latest",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.bmj.com/rss/recent.xml"
+  },
+  {
+   "name": "KFF Health News",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://kffhealthnews.org/feed/"
+  },
+  {
+   "name": "Guttmacher Institute",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.guttmacher.org/rss.xml"
+  },
+  {
+   "name": "Human Rights Watch",
+   "lang": "en",
+   "standing": "research",
+   "url": "https://www.hrw.org/rss/news"
+  },
+  {
+   "name": "The 19th",
+   "lang": "en",
+   "standing": "press",
+   "url": "https://19thnews.org/feed/"
+  },
+  {
+   "name": "The Guardian — World",
+   "lang": "en",
+   "standing": "press",
+   "url": "https://www.theguardian.com/world/rss"
+  },
+  {
+   "name": "Center for Reproductive Rights",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://reproductiverights.org/feed/"
+  },
+  {
+   "name": "IPPF",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://www.ippf.org/rss.xml"
+  },
+  {
+   "name": "Rewire News Group",
+   "lang": "en",
+   "standing": "rights",
+   "url": "https://rewirenewsgroup.com/feed/"
+  },
+  {
+   "name": "National Right to Life News",
+   "lang": "en",
+   "standing": "antiabortion",
+   "url": "https://www.nationalrighttolifenews.org/feed/"
+  },
+  {
+   "name": "Live Action News",
+   "lang": "en",
+   "standing": "antiabortion",
+   "url": "https://www.liveaction.org/news/feed/"
+  },
+  {
+   "name": "Catholic News Agency",
+   "lang": "en",
+   "standing": "antiabortion",
+   "url": "https://www.catholicnewsagency.com/rss/news.xml"
+  }
+ ],
+ "gnews": [
+  {
+   "label": "English (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (US) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion ruling"
+  },
+  {
+   "label": "English (US) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"abortion access\""
+  },
+  {
+   "label": "English (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (GB) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion ruling"
+  },
+  {
+   "label": "English (GB) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"abortion access\""
+  },
+  {
+   "label": "English (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (IN) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion ruling"
+  },
+  {
+   "label": "English (IN) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"abortion access\""
+  },
+  {
+   "label": "English (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (AU) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion ruling"
+  },
+  {
+   "label": "English (AU) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"abortion access\""
+  },
+  {
+   "label": "English (CA) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (CA) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion ruling"
+  },
+  {
+   "label": "English (CA) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "\"abortion access\""
+  },
+  {
+   "label": "English (UK) (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (UK) (US) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"abortion clinic\""
+  },
+  {
+   "label": "English (UK) (US) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "decriminalisation abortion"
+  },
+  {
+   "label": "English (UK) (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (UK) (GB) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"abortion clinic\""
+  },
+  {
+   "label": "English (UK) (GB) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "decriminalisation abortion"
+  },
+  {
+   "label": "English (UK) (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (UK) (IN) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"abortion clinic\""
+  },
+  {
+   "label": "English (UK) (IN) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "decriminalisation abortion"
+  },
+  {
+   "label": "English (UK) (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (UK) (AU) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"abortion clinic\""
+  },
+  {
+   "label": "English (UK) (AU) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "decriminalisation abortion"
+  },
+  {
+   "label": "English (UK) (CA) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (UK) (CA) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "\"abortion clinic\""
+  },
+  {
+   "label": "English (UK) (CA) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "decriminalisation abortion"
+  },
+  {
+   "label": "English (India) (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion law India"
+  },
+  {
+   "label": "English (India) (US) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "MTP Act"
+  },
+  {
+   "label": "English (India) (US) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"medical termination of pregnancy\""
+  },
+  {
+   "label": "English (India) (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion law India"
+  },
+  {
+   "label": "English (India) (GB) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "MTP Act"
+  },
+  {
+   "label": "English (India) (GB) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"medical termination of pregnancy\""
+  },
+  {
+   "label": "English (India) (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion law India"
+  },
+  {
+   "label": "English (India) (IN) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "MTP Act"
+  },
+  {
+   "label": "English (India) (IN) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"medical termination of pregnancy\""
+  },
+  {
+   "label": "English (India) (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion law India"
+  },
+  {
+   "label": "English (India) (AU) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "MTP Act"
+  },
+  {
+   "label": "English (India) (AU) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"medical termination of pregnancy\""
+  },
+  {
+   "label": "English (India) (CA) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion law India"
+  },
+  {
+   "label": "English (India) (CA) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "MTP Act"
+  },
+  {
+   "label": "English (India) (CA) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "\"medical termination of pregnancy\""
+  },
+  {
+   "label": "English (Aus) (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (Aus) (US) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion access"
+  },
+  {
+   "label": "English (Aus) (US) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"reproductive health\" legislation"
+  },
+  {
+   "label": "English (Aus) (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (Aus) (GB) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion access"
+  },
+  {
+   "label": "English (Aus) (GB) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"reproductive health\" legislation"
+  },
+  {
+   "label": "English (Aus) (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (Aus) (IN) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion access"
+  },
+  {
+   "label": "English (Aus) (IN) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"reproductive health\" legislation"
+  },
+  {
+   "label": "English (Aus) (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (Aus) (AU) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion access"
+  },
+  {
+   "label": "English (Aus) (AU) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"reproductive health\" legislation"
+  },
+  {
+   "label": "English (Aus) (CA) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion law"
+  },
+  {
+   "label": "English (Aus) (CA) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion access"
+  },
+  {
+   "label": "English (Aus) (CA) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "\"reproductive health\" legislation"
+  },
+  {
+   "label": "English (Kenya) (KE) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-KE",
+   "gl": "KE",
+   "ceid": "KE:en",
+   "query": "abortion law Kenya"
+  },
+  {
+   "label": "English (Kenya) (KE) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-KE",
+   "gl": "KE",
+   "ceid": "KE:en",
+   "query": "\"unsafe abortion\""
+  },
+  {
+   "label": "English (Kenya) (KE) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-KE",
+   "gl": "KE",
+   "ceid": "KE:en",
+   "query": "reproductive health bill"
+  },
+  {
+   "label": "English (Kenya) (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion law Kenya"
+  },
+  {
+   "label": "English (Kenya) (US) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"unsafe abortion\""
+  },
+  {
+   "label": "English (Kenya) (US) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "reproductive health bill"
+  },
+  {
+   "label": "English (Kenya) (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion law Kenya"
+  },
+  {
+   "label": "English (Kenya) (GB) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"unsafe abortion\""
+  },
+  {
+   "label": "English (Kenya) (GB) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "reproductive health bill"
+  },
+  {
+   "label": "English (Kenya) (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion law Kenya"
+  },
+  {
+   "label": "English (Kenya) (IN) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"unsafe abortion\""
+  },
+  {
+   "label": "English (Kenya) (IN) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "reproductive health bill"
+  },
+  {
+   "label": "English (Kenya) (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion law Kenya"
+  },
+  {
+   "label": "English (Kenya) (AU) · courts",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"unsafe abortion\""
+  },
+  {
+   "label": "English (Kenya) (AU) 1",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "reproductive health bill"
+  },
+  {
+   "label": "Español (ES) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "ley del aborto"
+  },
+  {
+   "label": "Español (ES) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "\"interrupción voluntaria del embarazo\""
+  },
+  {
+   "label": "Español (ES) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "sentencia aborto"
+  },
+  {
+   "label": "Español (MX) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "ley del aborto"
+  },
+  {
+   "label": "Español (MX) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "\"interrupción voluntaria del embarazo\""
+  },
+  {
+   "label": "Español (MX) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "sentencia aborto"
+  },
+  {
+   "label": "Español (AR) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "ley del aborto"
+  },
+  {
+   "label": "Español (AR) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "\"interrupción voluntaria del embarazo\""
+  },
+  {
+   "label": "Español (AR) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "sentencia aborto"
+  },
+  {
+   "label": "Español (CO) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "ley del aborto"
+  },
+  {
+   "label": "Español (CO) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "\"interrupción voluntaria del embarazo\""
+  },
+  {
+   "label": "Español (CO) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "sentencia aborto"
+  },
+  {
+   "label": "Español (CL) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "ley del aborto"
+  },
+  {
+   "label": "Español (CL) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "\"interrupción voluntaria del embarazo\""
+  },
+  {
+   "label": "Español (CL) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "sentencia aborto"
+  },
+  {
+   "label": "Español (MX) (ES) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "despenalización del aborto"
+  },
+  {
+   "label": "Español (MX) (ES) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "\"aborto legal\""
+  },
+  {
+   "label": "Español (MX) (ES) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "Suprema Corte aborto"
+  },
+  {
+   "label": "Español (MX) (MX) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "despenalización del aborto"
+  },
+  {
+   "label": "Español (MX) (MX) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "\"aborto legal\""
+  },
+  {
+   "label": "Español (MX) (MX) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "Suprema Corte aborto"
+  },
+  {
+   "label": "Español (MX) (AR) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "despenalización del aborto"
+  },
+  {
+   "label": "Español (MX) (AR) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "\"aborto legal\""
+  },
+  {
+   "label": "Español (MX) (AR) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "Suprema Corte aborto"
+  },
+  {
+   "label": "Español (MX) (CO) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "despenalización del aborto"
+  },
+  {
+   "label": "Español (MX) (CO) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "\"aborto legal\""
+  },
+  {
+   "label": "Español (MX) (CO) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "Suprema Corte aborto"
+  },
+  {
+   "label": "Español (MX) (CL) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "despenalización del aborto"
+  },
+  {
+   "label": "Español (MX) (CL) · courts",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "\"aborto legal\""
+  },
+  {
+   "label": "Español (MX) (CL) 1",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "Suprema Corte aborto"
+  },
+  {
+   "label": "Português (BR) · legislation",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "query": "aborto legal"
+  },
+  {
+   "label": "Português (BR) · courts",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "query": "\"interrupção da gravidez\""
+  },
+  {
+   "label": "Português (BR) 1",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "query": "STF aborto"
+  },
+  {
+   "label": "Português (PT) · legislation",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "query": "aborto legal"
+  },
+  {
+   "label": "Português (PT) · courts",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "query": "\"interrupção da gravidez\""
+  },
+  {
+   "label": "Português (PT) 1",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "query": "STF aborto"
+  },
+  {
+   "label": "Português (AO) · legislation",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "AO",
+   "ceid": "AO:pt-150",
+   "query": "aborto legal"
+  },
+  {
+   "label": "Português (AO) · courts",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "AO",
+   "ceid": "AO:pt-150",
+   "query": "\"interrupção da gravidez\""
+  },
+  {
+   "label": "Português (AO) 1",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "AO",
+   "ceid": "AO:pt-150",
+   "query": "STF aborto"
+  },
+  {
+   "label": "Français (FR) · legislation",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "query": "loi sur l'avortement"
+  },
+  {
+   "label": "Français (FR) · courts",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "query": "IVG"
+  },
+  {
+   "label": "Français (FR) 1",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "query": "\"interruption volontaire de grossesse\""
+  },
+  {
+   "label": "Français (BE) · legislation",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "BE",
+   "ceid": "BE:fr",
+   "query": "loi sur l'avortement"
+  },
+  {
+   "label": "Français (BE) · courts",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "BE",
+   "ceid": "BE:fr",
+   "query": "IVG"
+  },
+  {
+   "label": "Français (BE) 1",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "BE",
+   "ceid": "BE:fr",
+   "query": "\"interruption volontaire de grossesse\""
+  },
+  {
+   "label": "Français (CA) · legislation",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "query": "loi sur l'avortement"
+  },
+  {
+   "label": "Français (CA) · courts",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "query": "IVG"
+  },
+  {
+   "label": "Français (CA) 1",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "query": "\"interruption volontaire de grossesse\""
+  },
+  {
+   "label": "Français (SN) · legislation",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "SN",
+   "ceid": "SN:fr",
+   "query": "loi sur l'avortement"
+  },
+  {
+   "label": "Français (SN) · courts",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "SN",
+   "ceid": "SN:fr",
+   "query": "IVG"
+  },
+  {
+   "label": "Français (SN) 1",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "SN",
+   "ceid": "SN:fr",
+   "query": "\"interruption volontaire de grossesse\""
+  },
+  {
+   "label": "Français (CD) · legislation",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CD",
+   "ceid": "CD:fr",
+   "query": "loi sur l'avortement"
+  },
+  {
+   "label": "Français (CD) · courts",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CD",
+   "ceid": "CD:fr",
+   "query": "IVG"
+  },
+  {
+   "label": "Français (CD) 1",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CD",
+   "ceid": "CD:fr",
+   "query": "\"interruption volontaire de grossesse\""
+  },
+  {
+   "label": "Deutsch (DE) · legislation",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "query": "Abtreibungsrecht"
+  },
+  {
+   "label": "Deutsch (DE) · courts",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "query": "Schwangerschaftsabbruch"
+  },
+  {
+   "label": "Deutsch (DE) 1",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "query": "Paragraf 218"
+  },
+  {
+   "label": "Deutsch (AT) · legislation",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "AT",
+   "ceid": "AT:de",
+   "query": "Abtreibungsrecht"
+  },
+  {
+   "label": "Deutsch (AT) · courts",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "AT",
+   "ceid": "AT:de",
+   "query": "Schwangerschaftsabbruch"
+  },
+  {
+   "label": "Deutsch (AT) 1",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "AT",
+   "ceid": "AT:de",
+   "query": "Paragraf 218"
+  },
+  {
+   "label": "Deutsch (CH) · legislation",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "CH",
+   "ceid": "CH:de",
+   "query": "Abtreibungsrecht"
+  },
+  {
+   "label": "Deutsch (CH) · courts",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "CH",
+   "ceid": "CH:de",
+   "query": "Schwangerschaftsabbruch"
+  },
+  {
+   "label": "Deutsch (CH) 1",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "CH",
+   "ceid": "CH:de",
+   "query": "Paragraf 218"
+  },
+  {
+   "label": "Italiano (IT) · legislation",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "query": "legge 194"
+  },
+  {
+   "label": "Italiano (IT) · courts",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "query": "interruzione di gravidanza"
+  },
+  {
+   "label": "Italiano (IT) 1",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "query": "aborto accesso"
+  },
+  {
+   "label": "Italiano (CH) · legislation",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "CH",
+   "ceid": "CH:it",
+   "query": "legge 194"
+  },
+  {
+   "label": "Italiano (CH) · courts",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "CH",
+   "ceid": "CH:it",
+   "query": "interruzione di gravidanza"
+  },
+  {
+   "label": "Italiano (CH) 1",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "CH",
+   "ceid": "CH:it",
+   "query": "aborto accesso"
+  },
+  {
+   "label": "Polski · legislation",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "query": "prawo aborcyjne"
+  },
+  {
+   "label": "Polski · courts",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "query": "aborcja wyrok"
+  },
+  {
+   "label": "Polski 1",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "query": "dostęp do aborcji"
+  },
+  {
+   "label": "Русский (RU) · legislation",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "query": "закон об абортах"
+  },
+  {
+   "label": "Русский (RU) · courts",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "query": "запрет абортов"
+  },
+  {
+   "label": "Русский (RU) 1",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "query": "доступ к аборту"
+  },
+  {
+   "label": "Русский (KZ) · legislation",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "KZ",
+   "ceid": "KZ:ru",
+   "query": "закон об абортах"
+  },
+  {
+   "label": "Русский (KZ) · courts",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "KZ",
+   "ceid": "KZ:ru",
+   "query": "запрет абортов"
+  },
+  {
+   "label": "Русский (KZ) 1",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "KZ",
+   "ceid": "KZ:ru",
+   "query": "доступ к аборту"
+  },
+  {
+   "label": "Русский (BY) · legislation",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "BY",
+   "ceid": "BY:ru",
+   "query": "закон об абортах"
+  },
+  {
+   "label": "Русский (BY) · courts",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "BY",
+   "ceid": "BY:ru",
+   "query": "запрет абортов"
+  },
+  {
+   "label": "Русский (BY) 1",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "BY",
+   "ceid": "BY:ru",
+   "query": "доступ к аборту"
+  },
+  {
+   "label": "العربية (EG) · legislation",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "EG",
+   "ceid": "EG:ar",
+   "query": "قانون الإجهاض"
+  },
+  {
+   "label": "العربية (EG) · courts",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "EG",
+   "ceid": "EG:ar",
+   "query": "\"الإجهاض الآمن\""
+  },
+  {
+   "label": "العربية (EG) 1",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "EG",
+   "ceid": "EG:ar",
+   "query": "حق الإجهاض"
+  },
+  {
+   "label": "العربية (SA) · legislation",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "SA",
+   "ceid": "SA:ar",
+   "query": "قانون الإجهاض"
+  },
+  {
+   "label": "العربية (SA) · courts",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "SA",
+   "ceid": "SA:ar",
+   "query": "\"الإجهاض الآمن\""
+  },
+  {
+   "label": "العربية (SA) 1",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "SA",
+   "ceid": "SA:ar",
+   "query": "حق الإجهاض"
+  },
+  {
+   "label": "العربية (AE) · legislation",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "AE",
+   "ceid": "AE:ar",
+   "query": "قانون الإجهاض"
+  },
+  {
+   "label": "العربية (AE) · courts",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "AE",
+   "ceid": "AE:ar",
+   "query": "\"الإجهاض الآمن\""
+  },
+  {
+   "label": "العربية (AE) 1",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "AE",
+   "ceid": "AE:ar",
+   "query": "حق الإجهاض"
+  },
+  {
+   "label": "العربية (MA) · legislation",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "MA",
+   "ceid": "MA:ar",
+   "query": "قانون الإجهاض"
+  },
+  {
+   "label": "العربية (MA) · courts",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "MA",
+   "ceid": "MA:ar",
+   "query": "\"الإجهاض الآمن\""
+  },
+  {
+   "label": "العربية (MA) 1",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "MA",
+   "ceid": "MA:ar",
+   "query": "حق الإجهاض"
+  },
+  {
+   "label": "العربية (LB) · legislation",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "LB",
+   "ceid": "LB:ar",
+   "query": "قانون الإجهاض"
+  },
+  {
+   "label": "العربية (LB) · courts",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "LB",
+   "ceid": "LB:ar",
+   "query": "\"الإجهاض الآمن\""
+  },
+  {
+   "label": "العربية (LB) 1",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "LB",
+   "ceid": "LB:ar",
+   "query": "حق الإجهاض"
+  },
+  {
+   "label": "हिन्दी · legislation",
+   "lang": "hi",
+   "standing": "press",
+   "hl": "hi",
+   "gl": "IN",
+   "ceid": "IN:hi",
+   "query": "गर्भपात कानून"
+  },
+  {
+   "label": "हिन्दी · courts",
+   "lang": "hi",
+   "standing": "press",
+   "hl": "hi",
+   "gl": "IN",
+   "ceid": "IN:hi",
+   "query": "गर्भपात अधिकार"
+  },
+  {
+   "label": "हिन्दी 1",
+   "lang": "hi",
+   "standing": "press",
+   "hl": "hi",
+   "gl": "IN",
+   "ceid": "IN:hi",
+   "query": "एमटीपी अधिनियम"
+  },
+  {
+   "label": "Bahasa Indonesia · legislation",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "query": "undang-undang aborsi"
+  },
+  {
+   "label": "Bahasa Indonesia · courts",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "query": "hak aborsi"
+  },
+  {
+   "label": "Bahasa Indonesia 1",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "query": "akses aborsi"
+  },
+  {
+   "label": "日本語 · legislation",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "query": "人工妊娠中絶 法律"
+  },
+  {
+   "label": "日本語 · courts",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "query": "中絶 権利"
+  },
+  {
+   "label": "日本語 1",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "query": "経口中絶薬"
+  },
+  {
+   "label": "简体中文 (CN) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "CN",
+   "ceid": "CN:zh-Hans",
+   "query": "堕胎法"
+  },
+  {
+   "label": "简体中文 (CN) · courts",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "CN",
+   "ceid": "CN:zh-Hans",
+   "query": "人工流产 政策"
+  },
+  {
+   "label": "简体中文 (CN) 1",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "CN",
+   "ceid": "CN:zh-Hans",
+   "query": "生育权"
+  },
+  {
+   "label": "繁體中文 (TW) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "query": "墮胎法"
+  },
+  {
+   "label": "繁體中文 (TW) · courts",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "query": "人工流產 政策"
+  },
+  {
+   "label": "繁體中文 (TW) 1",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "query": "生育權"
+  },
+  {
+   "label": "繁體中文 (HK) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "query": "墮胎法"
+  },
+  {
+   "label": "繁體中文 (HK) · courts",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "query": "人工流產 政策"
+  },
+  {
+   "label": "繁體中文 (HK) 1",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "query": "生育權"
+  },
+  {
+   "label": "简体中文 (SG) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "SG",
+   "ceid": "SG:zh-Hans",
+   "query": "堕胎法"
+  },
+  {
+   "label": "简体中文 (SG) · courts",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "SG",
+   "ceid": "SG:zh-Hans",
+   "query": "人工流产 政策"
+  },
+  {
+   "label": "简体中文 (SG) 1",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "SG",
+   "ceid": "SG:zh-Hans",
+   "query": "生育权"
+  },
+  {
+   "label": "한국어 · legislation",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "query": "낙태법"
+  },
+  {
+   "label": "한국어 · courts",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "query": "임신중지 권리"
+  },
+  {
+   "label": "한국어 1",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "query": "낙태죄"
+  },
+  {
+   "label": "English (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"abortion ban\""
+  },
+  {
+   "label": "English (US) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"reproductive rights\""
+  },
+  {
+   "label": "English (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"abortion ban\""
+  },
+  {
+   "label": "English (GB) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"reproductive rights\""
+  },
+  {
+   "label": "English (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"abortion ban\""
+  },
+  {
+   "label": "English (IN) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"reproductive rights\""
+  },
+  {
+   "label": "English (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"abortion ban\""
+  },
+  {
+   "label": "English (AU) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"reproductive rights\""
+  },
+  {
+   "label": "English (CA) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "\"abortion ban\""
+  },
+  {
+   "label": "English (CA) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "\"reproductive rights\""
+  },
+  {
+   "label": "English (UK) (US) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"buffer zones\" abortion"
+  },
+  {
+   "label": "English (UK) (GB) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "\"buffer zones\" abortion"
+  },
+  {
+   "label": "English (UK) (IN) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "\"buffer zones\" abortion"
+  },
+  {
+   "label": "English (UK) (AU) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "\"buffer zones\" abortion"
+  },
+  {
+   "label": "English (UK) (CA) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "\"buffer zones\" abortion"
+  },
+  {
+   "label": "English (India) (US) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion court"
+  },
+  {
+   "label": "English (India) (GB) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion court"
+  },
+  {
+   "label": "English (India) (IN) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion court"
+  },
+  {
+   "label": "English (India) (AU) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion court"
+  },
+  {
+   "label": "English (India) (CA) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion court"
+  },
+  {
+   "label": "English (Aus) (US) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion clinic"
+  },
+  {
+   "label": "English (Aus) (GB) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion clinic"
+  },
+  {
+   "label": "English (Aus) (IN) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion clinic"
+  },
+  {
+   "label": "English (Aus) (AU) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion clinic"
+  },
+  {
+   "label": "English (Aus) (CA) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-CA",
+   "gl": "CA",
+   "ceid": "CA:en",
+   "query": "abortion clinic"
+  },
+  {
+   "label": "English (Kenya) (KE) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-KE",
+   "gl": "KE",
+   "ceid": "KE:en",
+   "query": "abortion court ruling"
+  },
+  {
+   "label": "English (Kenya) (US) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion court ruling"
+  },
+  {
+   "label": "English (Kenya) (GB) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion court ruling"
+  },
+  {
+   "label": "English (Kenya) (IN) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion court ruling"
+  },
+  {
+   "label": "English (Kenya) (AU) 2",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion court ruling"
+  },
+  {
+   "label": "Español (ES) 2",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "acceso al aborto"
+  },
+  {
+   "label": "Español (MX) 2",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "acceso al aborto"
+  },
+  {
+   "label": "Español (AR) 2",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "acceso al aborto"
+  },
+  {
+   "label": "Español (CO) 2",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "acceso al aborto"
+  },
+  {
+   "label": "Español (CL) 2",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "acceso al aborto"
+  },
+  {
+   "label": "Português (BR) 2",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "BR",
+   "ceid": "BR:pt-419",
+   "query": "descriminalização do aborto"
+  },
+  {
+   "label": "Português (PT) 2",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "PT",
+   "ceid": "PT:pt-150",
+   "query": "descriminalização do aborto"
+  },
+  {
+   "label": "Português (AO) 2",
+   "lang": "pt",
+   "standing": "press",
+   "hl": "pt-BR",
+   "gl": "AO",
+   "ceid": "AO:pt-150",
+   "query": "descriminalização do aborto"
+  },
+  {
+   "label": "Français (FR) 2",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "FR",
+   "ceid": "FR:fr",
+   "query": "accès à l'avortement"
+  },
+  {
+   "label": "Français (BE) 2",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "BE",
+   "ceid": "BE:fr",
+   "query": "accès à l'avortement"
+  },
+  {
+   "label": "Français (CA) 2",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CA",
+   "ceid": "CA:fr",
+   "query": "accès à l'avortement"
+  },
+  {
+   "label": "Français (SN) 2",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "SN",
+   "ceid": "SN:fr",
+   "query": "accès à l'avortement"
+  },
+  {
+   "label": "Français (CD) 2",
+   "lang": "fr",
+   "standing": "press",
+   "hl": "fr",
+   "gl": "CD",
+   "ceid": "CD:fr",
+   "query": "accès à l'avortement"
+  },
+  {
+   "label": "Deutsch (DE) 2",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "DE",
+   "ceid": "DE:de",
+   "query": "Abtreibung Gesetz"
+  },
+  {
+   "label": "Deutsch (AT) 2",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "AT",
+   "ceid": "AT:de",
+   "query": "Abtreibung Gesetz"
+  },
+  {
+   "label": "Deutsch (CH) 2",
+   "lang": "de",
+   "standing": "press",
+   "hl": "de",
+   "gl": "CH",
+   "ceid": "CH:de",
+   "query": "Abtreibung Gesetz"
+  },
+  {
+   "label": "Italiano (IT) 2",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "IT",
+   "ceid": "IT:it",
+   "query": "obiezione di coscienza aborto"
+  },
+  {
+   "label": "Italiano (CH) 2",
+   "lang": "it",
+   "standing": "press",
+   "hl": "it",
+   "gl": "CH",
+   "ceid": "CH:it",
+   "query": "obiezione di coscienza aborto"
+  },
+  {
+   "label": "Polski 2",
+   "lang": "pl",
+   "standing": "press",
+   "hl": "pl",
+   "gl": "PL",
+   "ceid": "PL:pl",
+   "query": "ustawa aborcyjna"
+  },
+  {
+   "label": "Русский (RU) 2",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "RU",
+   "ceid": "RU:ru",
+   "query": "прерывание беременности"
+  },
+  {
+   "label": "Русский (KZ) 2",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "KZ",
+   "ceid": "KZ:ru",
+   "query": "прерывание беременности"
+  },
+  {
+   "label": "Русский (BY) 2",
+   "lang": "ru",
+   "standing": "press",
+   "hl": "ru",
+   "gl": "BY",
+   "ceid": "BY:ru",
+   "query": "прерывание беременности"
+  },
+  {
+   "label": "العربية (EG) 2",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "EG",
+   "ceid": "EG:ar",
+   "query": "إجهاض حكم قضائي"
+  },
+  {
+   "label": "العربية (SA) 2",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "SA",
+   "ceid": "SA:ar",
+   "query": "إجهاض حكم قضائي"
+  },
+  {
+   "label": "العربية (AE) 2",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "AE",
+   "ceid": "AE:ar",
+   "query": "إجهاض حكم قضائي"
+  },
+  {
+   "label": "العربية (MA) 2",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "MA",
+   "ceid": "MA:ar",
+   "query": "إجهاض حكم قضائي"
+  },
+  {
+   "label": "العربية (LB) 2",
+   "lang": "ar",
+   "standing": "press",
+   "hl": "ar",
+   "gl": "LB",
+   "ceid": "LB:ar",
+   "query": "إجهاض حكم قضائي"
+  },
+  {
+   "label": "हिन्दी 2",
+   "lang": "hi",
+   "standing": "press",
+   "hl": "hi",
+   "gl": "IN",
+   "ceid": "IN:hi",
+   "query": "गर्भपात अदालत"
+  },
+  {
+   "label": "Bahasa Indonesia 2",
+   "lang": "id",
+   "standing": "press",
+   "hl": "id",
+   "gl": "ID",
+   "ceid": "ID:id",
+   "query": "aborsi aman"
+  },
+  {
+   "label": "日本語 2",
+   "lang": "ja",
+   "standing": "press",
+   "hl": "ja",
+   "gl": "JP",
+   "ceid": "JP:ja",
+   "query": "母体保護法"
+  },
+  {
+   "label": "简体中文 (CN) 2",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "CN",
+   "ceid": "CN:zh-Hans",
+   "query": "堕胎权"
+  },
+  {
+   "label": "繁體中文 (TW) 2",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "query": "墮胎權"
+  },
+  {
+   "label": "繁體中文 (HK) 2",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "query": "墮胎權"
+  },
+  {
+   "label": "简体中文 (SG) 2",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "SG",
+   "ceid": "SG:zh-Hans",
+   "query": "堕胎权"
+  },
+  {
+   "label": "한국어 2",
+   "lang": "ko",
+   "standing": "press",
+   "hl": "ko",
+   "gl": "KR",
+   "ceid": "KR:ko",
+   "query": "임신중절 접근"
+  },
+  {
+   "label": "English (Ireland) (IE) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IE",
+   "gl": "IE",
+   "ceid": "IE:en",
+   "query": "abortion legislation"
+  },
+  {
+   "label": "English (Ireland) (IE)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IE",
+   "gl": "IE",
+   "ceid": "IE:en",
+   "query": "abortion services review OR \"termination of pregnancy\" law"
+  },
+  {
+   "label": "English (Ireland) (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion legislation"
+  },
+  {
+   "label": "English (Ireland) (US)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion services review OR \"termination of pregnancy\" law"
+  },
+  {
+   "label": "English (Ireland) (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion legislation"
+  },
+  {
+   "label": "English (Ireland) (GB)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion services review OR \"termination of pregnancy\" law"
+  },
+  {
+   "label": "English (Ireland) (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion legislation"
+  },
+  {
+   "label": "English (Ireland) (IN)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion services review OR \"termination of pregnancy\" law"
+  },
+  {
+   "label": "English (Ireland) (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion legislation"
+  },
+  {
+   "label": "English (Ireland) (AU)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion services review OR \"termination of pregnancy\" law"
+  },
+  {
+   "label": "English (Nigeria) (NG) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "query": "reproductive health policy"
+  },
+  {
+   "label": "English (Nigeria) (NG)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-NG",
+   "gl": "NG",
+   "ceid": "NG:en",
+   "query": "abortion law OR \"unsafe abortion\" deaths"
+  },
+  {
+   "label": "English (Nigeria) (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "reproductive health policy"
+  },
+  {
+   "label": "English (Nigeria) (US)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion law OR \"unsafe abortion\" deaths"
+  },
+  {
+   "label": "English (Nigeria) (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "reproductive health policy"
+  },
+  {
+   "label": "English (Nigeria) (GB)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion law OR \"unsafe abortion\" deaths"
+  },
+  {
+   "label": "English (Nigeria) (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "reproductive health policy"
+  },
+  {
+   "label": "English (Nigeria) (IN)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion law OR \"unsafe abortion\" deaths"
+  },
+  {
+   "label": "English (Nigeria) (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "reproductive health policy"
+  },
+  {
+   "label": "English (Nigeria) (AU)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion law OR \"unsafe abortion\" deaths"
+  },
+  {
+   "label": "English (S. Africa) (ZA) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "query": "abortion access clinic"
+  },
+  {
+   "label": "English (S. Africa) (ZA)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-ZA",
+   "gl": "ZA",
+   "ceid": "ZA:en",
+   "query": "abortion law OR termination of pregnancy act"
+  },
+  {
+   "label": "English (S. Africa) (US) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion access clinic"
+  },
+  {
+   "label": "English (S. Africa) (US)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion law OR termination of pregnancy act"
+  },
+  {
+   "label": "English (S. Africa) (GB) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion access clinic"
+  },
+  {
+   "label": "English (S. Africa) (GB)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-GB",
+   "gl": "GB",
+   "ceid": "GB:en",
+   "query": "abortion law OR termination of pregnancy act"
+  },
+  {
+   "label": "English (S. Africa) (IN) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion access clinic"
+  },
+  {
+   "label": "English (S. Africa) (IN)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-IN",
+   "gl": "IN",
+   "ceid": "IN:en",
+   "query": "abortion law OR termination of pregnancy act"
+  },
+  {
+   "label": "English (S. Africa) (AU) · legislation",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion access clinic"
+  },
+  {
+   "label": "English (S. Africa) (AU)",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-AU",
+   "gl": "AU",
+   "ceid": "AU:en",
+   "query": "abortion law OR termination of pregnancy act"
+  },
+  {
+   "label": "Español (AR) (ES) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "acceso al aborto provincias"
+  },
+  {
+   "label": "Español (AR) (ES)",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es",
+   "gl": "ES",
+   "ceid": "ES:es",
+   "query": "aborto legal OR \"interrupción del embarazo\" ley"
+  },
+  {
+   "label": "Español (AR) (MX) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "acceso al aborto provincias"
+  },
+  {
+   "label": "Español (AR) (MX)",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "MX",
+   "ceid": "MX:es-419",
+   "query": "aborto legal OR \"interrupción del embarazo\" ley"
+  },
+  {
+   "label": "Español (AR) (AR) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "acceso al aborto provincias"
+  },
+  {
+   "label": "Español (AR) (AR)",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "AR",
+   "ceid": "AR:es-419",
+   "query": "aborto legal OR \"interrupción del embarazo\" ley"
+  },
+  {
+   "label": "Español (AR) (CO) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "acceso al aborto provincias"
+  },
+  {
+   "label": "Español (AR) (CO)",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CO",
+   "ceid": "CO:es-419",
+   "query": "aborto legal OR \"interrupción del embarazo\" ley"
+  },
+  {
+   "label": "Español (AR) (CL) · legislation",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "acceso al aborto provincias"
+  },
+  {
+   "label": "Español (AR) (CL)",
+   "lang": "es",
+   "standing": "press",
+   "hl": "es-419",
+   "gl": "CL",
+   "ceid": "CL:es-419",
+   "query": "aborto legal OR \"interrupción del embarazo\" ley"
+  },
+  {
+   "label": "Nederlands (NL) · legislation",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "query": "toegang tot abortus"
+  },
+  {
+   "label": "Nederlands (NL)",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "NL",
+   "ceid": "NL:nl",
+   "query": "abortuswet OR abortuszorg"
+  },
+  {
+   "label": "Nederlands (BE) · legislation",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "BE",
+   "ceid": "BE:nl",
+   "query": "toegang tot abortus"
+  },
+  {
+   "label": "Nederlands (BE)",
+   "lang": "nl",
+   "standing": "press",
+   "hl": "nl",
+   "gl": "BE",
+   "ceid": "BE:nl",
+   "query": "abortuswet OR abortuszorg"
+  },
+  {
+   "label": "Svenska · legislation",
+   "lang": "sv",
+   "standing": "press",
+   "hl": "sv",
+   "gl": "SE",
+   "ceid": "SE:sv",
+   "query": "tillgång till abort"
+  },
+  {
+   "label": "Svenska",
+   "lang": "sv",
+   "standing": "press",
+   "hl": "sv",
+   "gl": "SE",
+   "ceid": "SE:sv",
+   "query": "abortlag OR aborträtt"
+  },
+  {
+   "label": "Ελληνικά · legislation",
+   "lang": "el",
+   "standing": "press",
+   "hl": "el",
+   "gl": "GR",
+   "ceid": "GR:el",
+   "query": "πρόσβαση άμβλωση"
+  },
+  {
+   "label": "Ελληνικά",
+   "lang": "el",
+   "standing": "press",
+   "hl": "el",
+   "gl": "GR",
+   "ceid": "GR:el",
+   "query": "νόμος για την άμβλωση OR δικαίωμα στην άμβλωση"
+  },
+  {
+   "label": "Українська · legislation",
+   "lang": "uk",
+   "standing": "press",
+   "hl": "uk",
+   "gl": "UA",
+   "ceid": "UA:uk",
+   "query": "переривання вагітності"
+  },
+  {
+   "label": "Українська",
+   "lang": "uk",
+   "standing": "press",
+   "hl": "uk",
+   "gl": "UA",
+   "ceid": "UA:uk",
+   "query": "закон про аборти OR доступ до аборту"
+  },
+  {
+   "label": "Türkçe · legislation",
+   "lang": "tr",
+   "standing": "press",
+   "hl": "tr",
+   "gl": "TR",
+   "ceid": "TR:tr",
+   "query": "gebeliğin sonlandırılması"
+  },
+  {
+   "label": "Türkçe",
+   "lang": "tr",
+   "standing": "press",
+   "hl": "tr",
+   "gl": "TR",
+   "ceid": "TR:tr",
+   "query": "kürtaj yasası OR kürtaj hakkı"
+  },
+  {
+   "label": "فارسی · legislation",
+   "lang": "fa",
+   "standing": "press",
+   "hl": "fa",
+   "gl": "IR",
+   "ceid": "IR:fa",
+   "query": "دسترسی به سقط جنین"
+  },
+  {
+   "label": "فارسی",
+   "lang": "fa",
+   "standing": "press",
+   "hl": "fa",
+   "gl": "IR",
+   "ceid": "IR:fa",
+   "query": "قانون سقط جنین OR سقط جنین قانونی"
+  },
+  {
+   "label": "বাংলা (BD) · legislation",
+   "lang": "bn",
+   "standing": "press",
+   "hl": "bn",
+   "gl": "BD",
+   "ceid": "BD:bn",
+   "query": "নিরাপদ গর্ভপাত"
+  },
+  {
+   "label": "বাংলা (BD)",
+   "lang": "bn",
+   "standing": "press",
+   "hl": "bn",
+   "gl": "BD",
+   "ceid": "BD:bn",
+   "query": "গর্ভপাত আইন OR গর্ভপাত অধিকার"
+  },
+  {
+   "label": "বাংলা (IN) · legislation",
+   "lang": "bn",
+   "standing": "press",
+   "hl": "bn",
+   "gl": "IN",
+   "ceid": "IN:bn",
+   "query": "নিরাপদ গর্ভপাত"
+  },
+  {
+   "label": "বাংলা (IN)",
+   "lang": "bn",
+   "standing": "press",
+   "hl": "bn",
+   "gl": "IN",
+   "ceid": "IN:bn",
+   "query": "গর্ভপাত আইন OR গর্ভপাত অধিকার"
+  },
+  {
+   "label": "Tiếng Việt · legislation",
+   "lang": "vi",
+   "standing": "press",
+   "hl": "vi",
+   "gl": "VN",
+   "ceid": "VN:vi",
+   "query": "dịch vụ phá thai an toàn"
+  },
+  {
+   "label": "Tiếng Việt",
+   "lang": "vi",
+   "standing": "press",
+   "hl": "vi",
+   "gl": "VN",
+   "ceid": "VN:vi",
+   "query": "luật phá thai OR quyền phá thai"
+  },
+  {
+   "label": "ไทย · legislation",
+   "lang": "th",
+   "standing": "press",
+   "hl": "th",
+   "gl": "TH",
+   "ceid": "TH:th",
+   "query": "การยุติการตั้งครรภ์"
+  },
+  {
+   "label": "ไทย",
+   "lang": "th",
+   "standing": "press",
+   "hl": "th",
+   "gl": "TH",
+   "ceid": "TH:th",
+   "query": "กฎหมายทำแท้ง OR สิทธิทำแท้ง"
+  },
+  {
+   "label": "繁體中文 (CN) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "CN",
+   "ceid": "CN:zh-Hans",
+   "query": "生育權"
+  },
+  {
+   "label": "繁體中文 (CN)",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "CN",
+   "ceid": "CN:zh-Hans",
+   "query": "墮胎法 OR 人工流產 法規"
+  },
+  {
+   "label": "繁體中文 (TW) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "query": "生育權"
+  },
+  {
+   "label": "繁體中文 (TW)",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-TW",
+   "gl": "TW",
+   "ceid": "TW:zh-Hant",
+   "query": "墮胎法 OR 人工流產 法規"
+  },
+  {
+   "label": "繁體中文 (HK) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "query": "生育權"
+  },
+  {
+   "label": "繁體中文 (HK)",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-HK",
+   "gl": "HK",
+   "ceid": "HK:zh-Hant",
+   "query": "墮胎法 OR 人工流產 法規"
+  },
+  {
+   "label": "繁體中文 (SG) · legislation",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "SG",
+   "ceid": "SG:zh-Hans",
+   "query": "生育權"
+  },
+  {
+   "label": "繁體中文 (SG)",
+   "lang": "zh",
+   "standing": "press",
+   "hl": "zh-CN",
+   "gl": "SG",
+   "ceid": "SG:zh-Hans",
+   "query": "墮胎法 OR 人工流產 法規"
+  },
+  {
+   "label": "Kiswahili (KE) · legislation",
+   "lang": "sw",
+   "standing": "press",
+   "hl": "sw",
+   "gl": "KE",
+   "ceid": "KE:sw",
+   "query": "utoaji mimba salama"
+  },
+  {
+   "label": "Kiswahili (KE)",
+   "lang": "sw",
+   "standing": "press",
+   "hl": "sw",
+   "gl": "KE",
+   "ceid": "KE:sw",
+   "query": "sheria ya utoaji mimba OR haki ya utoaji mimba"
+  },
+  {
+   "label": "Kiswahili (TZ) · legislation",
+   "lang": "sw",
+   "standing": "press",
+   "hl": "sw",
+   "gl": "TZ",
+   "ceid": "TZ:sw",
+   "query": "utoaji mimba salama"
+  },
+  {
+   "label": "Kiswahili (TZ)",
+   "lang": "sw",
+   "standing": "press",
+   "hl": "sw",
+   "gl": "TZ",
+   "ceid": "TZ:sw",
+   "query": "sheria ya utoaji mimba OR haki ya utoaji mimba"
+  }
+ ],
+ "events": [
+  {
+   "label": "Courts & rulings · courts",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion ruling court OR supreme court abortion decision OR constitutional court abortion"
+  },
+  {
+   "label": "Courts & rulings",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "\"struck down\" abortion law"
+  },
+  {
+   "label": "Legislation & referendums",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion bill passed OR abortion referendum OR abortion law enacted OR parliament votes abortion OR ballot measure abortion"
+  },
+  {
+   "label": "Access & services",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion clinic closes OR abortion clinic opens OR travel for abortion OR \"abortion funds\" OR waiting period abortion"
+  },
+  {
+   "label": "Medication abortion",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "mifepristone OR misoprostol regulation OR \"medication abortion\" ruling OR telehealth abortion pills OR abortion pill approval"
+  },
+  {
+   "label": "Criminalisation",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "prosecuted for abortion OR jailed abortion OR criminal charges miscarriage OR abortion arrest OR \"abortion prosecution\""
+  },
+  {
+   "label": "Health outcomes & data · courts",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "maternal mortality abortion study OR \"unsafe abortion\" deaths WHO OR abortion rates data"
+  },
+  {
+   "label": "Health outcomes & data",
+   "lang": "en",
+   "standing": "research",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "study abortion access outcomes"
+  },
+  {
+   "label": "International bodies",
+   "lang": "en",
+   "standing": "official",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "WHO abortion guidance OR UN abortion rights OR CEDAW abortion OR European Court abortion OR \"Global Gag Rule\""
+  },
+  {
+   "label": "Movements & protest",
+   "lang": "en",
+   "standing": "press",
+   "hl": "en-US",
+   "gl": "US",
+   "ceid": "US:en",
+   "query": "abortion rights march OR anti-abortion campaign OR pro-life rally OR abortion protest OR clinic buffer zone protest"
+  }
+ ]
 }
